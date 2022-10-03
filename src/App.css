@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: gothamBlack;
+    src        : url(/assets/fonts/Gotham-Font/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: gothamLight;
+    src        : url(/assets/fonts/Gotham-Font/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: gothamMedium;
+    src        : url(/assets/fonts/Gotham-Font/GothamMedium.ttf);
+}
+
+* {
+    font-family: gothamLight;
+}
+
+.title {
+    font-family: gothamBlack;
+
+}
+
+.subtitle {
+    font-family: gothamMedium;
+
+}
+
+/*SIDEBAR*/
+.active>div{
+    @apply shadow-xl bg-blue-500 text-white
+}
+
+/*Efecto flotante*/
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+/*/////////////////////////////////////////////*/

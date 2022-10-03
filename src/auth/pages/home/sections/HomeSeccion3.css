@@ -1,0 +1,17 @@
+#circle {
+    height: 225px;
+    width: 225px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #circle {
+        top: 102%;
+        height: 155px;
+        width: 155px;
+    }
+}
